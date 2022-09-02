@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
             //Ask user for permission
             Notification.requestPermission().then(function(permission) {
                  //If permissin is granted
-                if (permission === 'granted') {
+                if (permission === "granted") {
                 
                     new Notification(
                         "Awesome! Dyes will notify you at the start of each session"
