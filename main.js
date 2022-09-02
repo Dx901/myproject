@@ -151,7 +151,6 @@ function handleMode(event) {
     stopTimer();
 }
 document.addEventListener('DOMContentLoaded', () => {
-    //Check if the browser supports notifications
     if ('Notification' in window) {
         //If notification permissions are neither granted nor denied
         if (Notification.permission !== 'granted' && Notification.permission !== 'denied') {
@@ -159,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
             Notification.requestPermission().then(function(permission) {
                  //If permissin is granted
                 if (permission === 'granted') {
-                   //Create a new notification
+                
                     new Notification(
                         "Awesome! Dyes will notify you at the start of each session"
                     )
